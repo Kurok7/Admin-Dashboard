@@ -1,3 +1,24 @@
+body {
+    margin: 0 auto;
+}
+
 li {
+    list-style: none;
     text-decoration: none;
+    
+}
+
+.search {
+    border-radius: 0.6em;
+}
+
+.new, .upload, .share {
+    border-radius: 1.1em;
+    padding: 7px;
+    margin: 0.3rem;
+    background-color: rgb(16, 94, 158)
+}
+
+.projects {
+    background-color: rgb(160, 190, 199);
 }
