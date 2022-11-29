@@ -1,2 +1,2 @@
-# Admin-Dashboard
-A project off The Odin Project
+Admin-Dashboard
+Last project of The Odin Project's Intermediate HTML and CSS Course.
