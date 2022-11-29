@@ -1,24 +1,52 @@
 body {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
-li {
-    list-style: none;
-    text-decoration: none;
-    
+.side-bar {
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(55, 126, 219);
+	overflow-x: hidden;
+	padding-top: 15px;
+}
+
+.side-bar a,
+.dashboard {
+	padding: 10px 4px 5px;
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	display: block;
+}
+
+.side-bar a:hover {
+	color: lightgrey;
+}
+
+i {
+	margin-right: 10px;
+}
+
+.header,
+.projects,
+section {
+	margin-left: 185px;
+	padding: 0px 10px;
 }
 
 .search {
-    border-radius: 0.6em;
+	border-radius: 0.6em;
 }
 
-.new, .upload, .share {
-    border-radius: 1.1em;
-    padding: 7px;
-    margin: 0.3rem;
-    background-color: rgb(16, 94, 158)
-}
-
-.projects {
-    background-color: rgb(160, 190, 199);
+.new,
+.upload,
+.share {
+	border-radius: 1.1em;
+	padding: 7px;
+	margin: 0.3rem;
+	background-color: rgb(16, 94, 158);
 }
