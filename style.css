@@ -1,17 +1,16 @@
 body {
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .side-bar {
 	height: 100%;
-	width: 180px;
+	width: 13em;
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	left: 0;
 	background-color: rgb(55, 126, 219);
 	overflow-x: hidden;
-	padding-top: 15px;
 }
 
 .side-bar a,
@@ -23,30 +22,60 @@ body {
 	display: block;
 }
 
+.fa-laptop-code {
+	margin-right: 0.5em;
+}
+
 .side-bar a:hover {
 	color: lightgrey;
 }
 
 i {
-	margin-right: 10px;
+	margin-right: 0.8em;
+}
+/* NEED TO GRID THIS FIRST BEFORE HEADER CAN BE APPLIED */
+.header {
+	/* display: grid;
+	grid-area: 1 / 2 / 2 / -1; */
+	border-bottom: 1px ridge gray;
 }
 
 .header,
 .projects,
 section {
-	margin-left: 185px;
-	padding: 0px 10px;
+	margin-top: 1em;
+	margin-left: 13em;
+	padding: 0.5em 1.5em;
 }
 
-.search {
-	border-radius: 0.6em;
+.header .search {
+	border-radius: 0.5em;
+	border: none;
+	width: 40%;
+	background-color: lightgray;
+	padding: 2px;
 }
 
-.new,
-.upload,
-.share {
+.header .fa-bell {
+	margin-left: 50px;
+}
+
+/* .profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+img {
+	border-radius: 50%;
+	width: 3em;
+}
+
+button {
 	border-radius: 1.1em;
-	padding: 7px;
+	border: none;
+	padding: 8px 20px 8px;
 	margin: 0.3rem;
-	background-color: rgb(16, 94, 158);
+	background-color: rgb(55, 126, 219);
+	color: white;
 }
