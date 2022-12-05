@@ -35,8 +35,9 @@ i {
 }
 /* NEED TO GRID THIS FIRST BEFORE HEADER CAN BE APPLIED */
 .header {
-	/* display: grid;
-	grid-area: 1 / 2 / 2 / -1; */
+	display: grid;
+	/* grid-template-columns: repeat(2, auto); */
+	grid-template-columns: 2fr auto;
 	border-bottom: 1px ridge gray;
 }
 
@@ -51,7 +52,7 @@ section {
 .header .search {
 	border-radius: 0.5em;
 	border: none;
-	width: 40%;
+	width: 90%;
 	background-color: lightgray;
 	padding: 2px;
 }
@@ -60,11 +61,31 @@ section {
 	margin-left: 50px;
 }
 
-/* .profile {
+.search-container {
+	border: 1px solid purple;
+	align-self: center;
+}
+
+.profile {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-} */
+	gap: 0.5em;
+	border: 1px solid blue;
+}
+
+.welcome {
+	display: grid;
+	grid-template: 1fr 1fr / auto 1fr;
+	align-items: center;
+	border: 1px solid red;
+}
+
+.buttons {
+	border: 1px solid green;
+	display: flex;
+	align-items: center;
+}
 
 img {
 	border-radius: 50%;
@@ -74,8 +95,9 @@ img {
 button {
 	border-radius: 1.1em;
 	border: none;
-	padding: 8px 20px 8px;
-	margin: 0.3rem;
+	height: 2em;
+	width: 6em;
+	margin: 0.4em;
 	background-color: rgb(55, 126, 219);
 	color: white;
 }
