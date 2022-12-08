@@ -41,7 +41,6 @@ i {
 }
 
 .header,
-.projects,
 section {
 	margin-top: 1em;
 	margin-left: 13em;
@@ -53,7 +52,7 @@ section {
 	border: none;
 	width: 90%;
 	background-color: lightgray;
-	padding: 2px;
+	padding: 0.4em;
 }
 
 .header .fa-bell {
@@ -85,6 +84,15 @@ section {
 	align-items: center;
 }
 
+.buttons a {
+	text-decoration: none;
+	color: white;
+}
+
+.buttons a:hover {
+	color: lightgrey;
+}
+
 img {
 	border-radius: 50%;
 	width: 3em;
@@ -98,4 +106,20 @@ button {
 	margin: 0.4em;
 	background-color: rgb(55, 126, 219);
 	color: white;
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 1.5em;
+
+	border: 3px solid purple;
+}
+
+.projects {
+	border: 3px solid red;
+}
+
+.box {
+	border: 3px solid greenyellow;
 }
