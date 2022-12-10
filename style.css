@@ -143,8 +143,14 @@ button {
 .test-block {
 	padding: 1em;
 }
-/* 
+
 .icon-block {
-	border: 1px solid blueviolet;
-	padding: 0.5em;
-} */
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	/* border: 1px solid blueviolet; */
+	height: 1em;
+	gap: 1em;
+	padding: 2em;
+	/* padding: 0.3em; */
+}
