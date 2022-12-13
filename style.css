@@ -113,44 +113,79 @@ button {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 2rem 2rem;
-	/* border: 3px solid purple; */
-	background-color: rgba(48, 132, 184, 0.618);
+	border: 3px solid purple;
+	background-color: rgba(35, 104, 146, 0.356);
 }
 
 .projects {
 	display: grid;
-	grid-template: 1fr auto / 1fr 1fr;
+	grid-template: auto auto auto / 1fr 1fr;
 	border: 3px solid red;
 	gap: 1rem 1rem;
 }
 
 .test-block h5 {
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .box {
 	background-color: white;
 	border-radius: 0.8em;
+	display: grid;
+	grid-template: 1fr auto / 2rem auto;
 }
 
-/* .color-accent {
-	border: 1px solid yellow;
-	padding: 0.6em;
-	background-color: black;
-} */
+.color-accent {
+	width: auto;
+	grid-row: 1 / -1;
+	border-radius: 0.8em 0 0 0.8em;
+	padding: 1em;
+	background-color: rgb(55, 126, 219);
+}
 
 .test-block {
 	padding: 1em;
+}
+
+.test-block > p {
+	font-size: 1.3em;
 }
 
 .icon-block {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	/* border: 1px solid blueviolet; */
 	height: 1em;
-	gap: 1em;
-	padding: 2em;
-	/* padding: 0.3em; */
+	gap: 0.5em;
+	padding: 1.3em;
+}
+
+.side-content {
+	border: 1px solid white;
+	display: grid;
+	grid-template-rows: auto 1fr auto 1fr;
+	gap: 0.3em;
+}
+
+.side-content > h4 {
+	margin: 0;
+	margin-bottom: 0.5em;
+	border: 1px solid red;
+	font-size: 1.3em;
+}
+
+.announcements,
+.trending {
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 0.5em;
+	display: flex;
+	justify-content: space-around;
+	flex: 1;
+	/* font-size: 1.3em; */
+}
+
+.an-board {
+	border: 1px solid green;
 }
