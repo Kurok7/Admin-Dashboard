@@ -5,7 +5,7 @@ body {
 
 .side-bar {
 	height: 100%;
-	width: 13em;
+	width: 15em;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -42,8 +42,7 @@ i {
 
 .header,
 section {
-	margin-top: 1em;
-	margin-left: 13em;
+	margin-left: 15em;
 	padding: 0.5em 1.5em;
 }
 
@@ -66,7 +65,11 @@ section {
 .profile {
 	display: flex;
 	align-items: center;
-	gap: 0.5em;
+	gap: 0.8em;
+}
+
+.profile img {
+	width: 2.5em;
 }
 
 .profile > p {
@@ -81,7 +84,7 @@ section {
 }
 
 .welcome > img {
-	width: 6em;
+	width: 4em;
 }
 
 .greeting,
@@ -178,7 +181,7 @@ button {
 
 .side-content > h4 {
 	margin: 0;
-	margin-bottom: 0.5em;
+	margin: 0.6em;
 	font-size: 1.3em;
 }
 
@@ -186,9 +189,6 @@ button {
 .trending {
 	background-color: white;
 	border-radius: 1em;
-	display: flex;
-	justify-content: space-around;
-	/* font-size: 1.3em; */
 }
 
 .an-content,
@@ -200,4 +200,21 @@ button {
 	height: 1px;
 	width: 100%;
 	background-color: grey;
+}
+
+.trend-content {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 2em;
+}
+
+.trend-profile {
+	display: flex;
+	align-items: center;
+	gap: 0.6em;
+	margin-bottom: 1.5em;
+}
+
+.trend-profile span {
+	color: grey;
 }
